@@ -10,7 +10,8 @@
     + `@import` defers the loading of included resourse, until the file is fetched.
     + also for `SEO` stuff, `link` is better, as it preloads the font.
 + `link, preconnect` - The preconnect link relation type is used to indicate an origin that will be used to fetch required resources. Initiating an early connection, which includes the DNS lookup, TCP handshake, and optional TLS negotiation, allows the user agent to mask the high latency costs of establishing a connection.
-
++ ```<meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' data: fonts.gstatic.com;">```
+used to allows the deployment on `github pages` along the cdn.
 ### Semantic elements - clearly define the content
 * form, table, article, section, header, footer, nav
 
